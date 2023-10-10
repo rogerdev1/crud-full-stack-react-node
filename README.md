@@ -4,6 +4,9 @@
 
 Aplicação React e Node.js com conexão à banco de dados MySQL.
 
+`branch client` para os arquivos React <br>
+`branch server` para os arquivos Node.js
+
 ## Instale os arquivos necessários
 
 #### No diretório Client/
