@@ -1,0 +1,27 @@
+.App form{
+  border: 1px gray solid; border-radius: 4px;
+  width: 300px;
+  height: 200px;
+  margin: 50px auto;
+  padding: 20px;
+}
+.App h1{
+  margin-bottom: 10px;
+  text-align: center;
+}
+.App form input{
+  margin: 5px auto;
+  width: 100%; padding: 2px;
+  border-radius: 4px; border: 1px gray solid;
+}
+
+.App form button{
+  padding: 4px 15px; margin-top: 5px;
+  background-color: rgb(38, 191, 38);
+  border: none; border-radius: 4px;
+  color: aliceblue;
+}
+.App form button:hover{
+  background-color: rgb(38, 157, 38);
+  transition: .4s;
+}
