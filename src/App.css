@@ -25,3 +25,9 @@
   background-color: rgb(38, 157, 38);
   transition: .4s;
 }
+.App #listaItens{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}

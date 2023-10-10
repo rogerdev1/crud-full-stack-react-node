@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Axios from 'axios'
 import './App.css';
-import Card from './components/Card';
+import Card from './components/Card/Card';
 
 function App() {
 
@@ -20,11 +20,14 @@ function App() {
     }))
   }
 
-  const handleClickSubmit = () =>(
+  const cadastrarItem = () => (
     Axios.post('http://localhost:7000/cadastrar', {
-      nome: values.nome, preco: values.preco, categoria: values.categoria
-    }).then((response) => console.log(response)).catch(() => console.log('sem sucesso'))
+      nome: values.nome,
+      preco: values.preco,
+      categoria: values.categoria,
+    }).then(() => alert('Cadastrado com sucesso'))
   )
+
   return (
     <div className="App">
       <h1>CRUD Full Stack</h1>
@@ -51,10 +54,12 @@ function App() {
         />
         <button type='submit' onClick={(e) => {
           e.preventDefault()
-          handleClickSubmit()
+          cadastrarItem()
+          //alert('Cadastrado com sucesso')
+          document.location.reload()
         }}>Cadastrar</button>
       </form>
-      <ul>
+      <ul id='listaItens'>
       {typeof lista !== "undefined" &&
         lista.map( item => {
           return (
