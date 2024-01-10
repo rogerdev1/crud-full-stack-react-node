@@ -33,4 +33,4 @@ Em seu terminal:  `npm start`
 ### ✨ Dica ✨
 
 Instale o [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) para gerênciamento e visualização do banco de dados.<br>
-Instale o [Postman](https://www.postman.com/downloads/) para gerênciamento e visualização do banco de dados.
+Instale o [Postman](https://www.postman.com/downloads/) para gerênciamento e visualização das requisições HTTP.
